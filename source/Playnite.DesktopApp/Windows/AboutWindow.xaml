@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         Style="{DynamicResource StandardWindowStyle}"
         WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
-        Title="{DynamicResource LOCAboutWindowTitle}" ResizeMode="NoResize" Height="400" Width="500"
+        Title="About Arcadia" ResizeMode="NoResize" Height="400" Width="500"
         AutomationProperties.AutomationId="WindowAbout" ShowMinimizeButton="False" ShowMaximizeButton="False">
 
     <controls:WindowBase.Resources>
@@ -41,21 +41,21 @@
 
             <StackPanel Grid.Column="2">
                 <TextBlock>
-                    <Hyperlink NavigateUri="https://www.playnite.link"
+                   <Hyperlink NavigateUri="https://github.com/xSmmw/Playnite-Arcadia-"
                                Command="{x:Static pcmd:GlobalCommands.NavigateUrlCommand}" CommandParameter="{Binding NavigateUri, RelativeSource={RelativeSource Self}}">
-                        <Run Text="https://www.playnite.link"/>
+                        <Run Text="Arcadia on GitHub"/>
                     </Hyperlink>
                 </TextBlock>
                 <TextBlock Margin="0,5,0,0">
-                    <Hyperlink NavigateUri="https://playnite.link/docs/"
-                               Command="{x:Static pcmd:GlobalCommands.NavigateUrlCommand}" CommandParameter="{Binding NavigateUri, RelativeSource={RelativeSource Self}}">
-                        <Run Text="{DynamicResource LOCUserManual}"/>
+                    <Hyperlink NavigateUri="https://github.com/xSmmw/Playnite-Arcadia-"
+                                Command="{x:Static pcmd:GlobalCommands.NavigateUrlCommand}" CommandParameter="{Binding NavigateUri, RelativeSource={RelativeSource Self}}">
+                        <Run Text="Arcadia Documentation"/>
                     </Hyperlink>
                 </TextBlock>
                 <TextBlock Margin="0,5,0,0">
-                    <Hyperlink NavigateUri="https://github.com/JosefNemec/Playnite/"
-                               Command="{x:Static pcmd:GlobalCommands.NavigateUrlCommand}" CommandParameter="{Binding NavigateUri, RelativeSource={RelativeSource Self}}">
-                        <Run Text="{DynamicResource LOCAboutSourceLink}"/>
+                    <Hyperlink NavigateUri="https://github.com/xSmmw/Playnite-Arcadia-"
+                                Command="{x:Static pcmd:GlobalCommands.NavigateUrlCommand}" CommandParameter="{Binding NavigateUri, RelativeSource={RelativeSource Self}}">
+                        <Run Text="Arcadia Source Code"/>
                     </Hyperlink>
                 </TextBlock>
                 <TextBlock Margin="0,5,0,0">
