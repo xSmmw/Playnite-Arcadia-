@@ -187,3 +187,11 @@ if ($Package)
 
 (Get-ChildItem (Join-Path $OutputDir "Playnite.dll")).VersionInfo.FileVersion | Write-Host -ForegroundColor Green
 return $true
+
+# Copy Extensions automatically
+$extensionsSource = "$env:APPDATA\Playnite\Extensions"
+$extensionsDest = "$OutputDir\Extensions"
+if (Test-Path $extensionsSource) {
+    Copy-Item $extensionsSource $extensionsDest -Recurse -Force
+    Write-Host "Extensions copied successfully"
+}
